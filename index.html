@@ -59,11 +59,11 @@ the ball can be caught at some point before it hits the ground.
 <div class="image-container">
     <p class="caption">Figure 1: Forward Time, travelling out of the working space</p>
     <p class="caption">Figure 2: Reverse Time, thrown outside the working space, landing in the 2D working space</p>
-    <img src="reverse_time_step.png" alt="Random Points generated in the shape of a semi-circle" class="project-image">
+    <img src="reverse_time_step.PNG" alt="Random Points generated in the shape of a semi-circle" class="project-image">
 </div>
 
 <br><br>
-<img src="sample_trajectory.png" alt="Random Points generated in the shape of a semi-circle" class="project-image">
+<img src="sample_trajectory.PNG" alt="Random Points generated in the shape of a semi-circle" class="project-image">
 
 <p/>
 
@@ -76,7 +76,7 @@ is located at the base of the robotic agent, which is considered to be the point
 to a different position in space, with the selection of the thetas constituting one action. The agent is allowed to act until the ball is caught or hits the ground. 
 If either of those events occurs, the agent is set back to its initial position and a new episode begins.
 
-<img src="robo_frame.png" alt="Reference Frames for a Robotic Agent with 4 actuators" class="project-image">
+<img src="robo_frame.PNG" alt="Reference Frames for a Robotic Agent with 4 actuators" class="project-image">
 
 <h2>Displacement Function</h2>
 <p>
@@ -87,8 +87,8 @@ the agent. The actual position of the agent is represented as a function of the 
 is determined by the particular expression of the 4 thetas.
 </p>
 
-<img src="htm_forms.png" alt="Math notation for finding the displacement from the base frame to the end affector" class="project-image">
-<img src="displace_frame.png" alt="Line showing the displacement from the base to the end affector for the robotic agent" class="project-image">
+<img src="htm_forms.PNG" alt="Math notation for finding the displacement from the base frame to the end affector" class="project-image">
+<img src="displace_frame.PNG" alt="Line showing the displacement from the base to the end affector for the robotic agent" class="project-image">
 </p>
 
 <h2>Model Training</h2>
@@ -96,7 +96,7 @@ is determined by the particular expression of the 4 thetas.
 <p>For training the agent, I tried all manner of reinforcement learning methods,which all failed, but what did work was using supervised learning methods. At every time
 step, the ball position and the position of the robot's end affector are known. 
 
-<img src="red_reward_distance.png" alt="Math notation for finding the displacement from the base frame to the end affector" class="project-image">	
+<img src="red_reward_distance.PNG" alt="Math notation for finding the displacement from the base frame to the end affector" class="project-image">	
 
 To get the arm closer to the ball, I took the euclidean distance between the position of 
 the ball and the end affector to be an objective function, which can be minimized by doing gradient descent on (θ1, θ2, θ3, θ4). By figuring out how to change the thetas
